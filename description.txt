@@ -1,0 +1,9 @@
+A dark mode and light mode button
+
+View wil change depending on whether window width is 900 px or not
+
+Links will direct you to different parts of page AND will change when hovered
+
+Projects show a preview when they are hovered on
+
+Image carousel

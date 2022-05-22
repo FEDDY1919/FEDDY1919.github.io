@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>YY Portfolio Site</title>
+        <link rel="stylesheet" href="portfolio.css">
+        <script src = "portofolio.js"></script>
+        <script src="https://kit.fontawesome.com/c3b558a3d8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+
+    <body>
+
+        <header>
+            <section class="lightbox" id = "box" >
+                <button class = "mode" id = "mode" onclick = "switchColorScheme()">Dark Mode</button>
+                <h1>YANG YANG</h1>
+                <span>My Portfolio Website</span><br>
+                <span>[Contact: +11 1111 1111 OR Test@email.com]</span>
+            </section>
+            <nav class = "navbar" >
+                <a href ="#about" onclick = "displayFunction(0)" class = "links"><i class="fas fa-user"></i><br>About</a>
+                <a href ='#education' onclick = "displayFunction(1)" class = "links"><i class="fas fa-graduation-cap"></i><br>Education</a>
+                <a href ='#skills' onclick = "displayFunction(2)" class = "links"><i class="fas fa-user-gear"></i><br>Skills</a>
+                <a href ='#projects' onclick = "displayFunction(3)" class = "links"><i class="fas fa-laptop-code"></i><br>Projects</a>
+                <a href ='#certificates' onclick = "displayFunction(4)" class = "links"><i class="fas fa-certificate"></i><br>Certificates</a>
+            </nav>
+        </header>
+
+        <div class = "content about" id = "about" > 
+            <img src = "img/profile.png" class = "myPhoto" alt = "A photo of me">
+            <section class = "aboutText">
+                <h2><u>About</u></h2>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremqu
+                    e laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                    architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+                    sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                    voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit 
+                    amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut 
+                    labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis 
+                    nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea 
+                </p>
+            </section>
+        </div>
+
+        <section class = "content" id = "education" >
+            <h2><u>Education</u></h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam rhoncus scelerisque faucibus. Nunc accumsan rutrum sodales. Ut in sagittis lacus. Etiam egestas suscipit ante et posuere. 
+                 Morbi mollis egestas sem non pharetra. Aenean maximus volutpat urna eget placerat. Vestibulum interdum cursus hendrerit. Aenean quis consectetur nunc. Vivamus vitae nulla leo.
+
+                Praesent magna massa, lacinia in iaculis et, tempus sed dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                Praesent non hendrerit lacus. Phasellus finibus urna non rutrum mollis. Quisque nec ante iaculis, tempor neque dictum, dignissim quam. Morbi est quam, 
+                luctus quis justo a, fringilla malesuada nisl. Nam dapibus tellus malesuada leo finibus pretium id tincidunt eros.
+
+                Nunc lectus est, pharetra tincidunt tellus ac, pharetra congue leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam efficitur 
+                cursus odio vitae sodales. Nulla nulla lectus, hendrerit at mauris nec, pellentesque sagittis sem. Donec ut ante turpis. Aenean velit dui, sollicitudin ut egestas eu, posuere ut quam. Quisque fermentum lobortis risus eu finibus.
+                </p>
+        </section>
+
+        <section class = "content" id = "skills" >
+            <h2><u>Skills</u></h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar purus ac sem auctor, vel sollicitudin elit commodo. Curabitur ultricies eget diam vitae gravida.
+                Sed eget tempor eros, ac fringilla justo. Curabitur et nunc ac quam euismod viverra. Praesent 
+                pharetra odio non lacinia egestas. Nunc lacinia tortor quis mi elementum finibus. Sed 
+                lobortis justo id ante dapibus, sit amet bibendum dolor pulvinar. Morbi a rhoncus orci. Nullam 
+                suscipit ligula vel massa tincidunt fermentum. Nulla ut arcu metus. Fusce sollicitudin mattis mi, vel dictum ipsum cursus 
+                vel. Mauris elementum ut tellus nec efficitur. Pellentesque faucibus sagittis bibendum. Donec semper fringilla dolor.
+            </p>
+        </section>
+
+        <section class = "content" id = "projects" >
+            <h2><u>Projects</u></h2>
+            <ul class = "projectLink">
+                <li><a href = "#" onmouseover = "showPreview(0)" onmouseleave = "removePreview()" >Project 1</a><br></li>
+                <li><a href = "#" onmouseover = "showPreview(1)" onmouseleave = "removePreview()">Project 2</a><br></li>
+            </ul>
+            <section class = "projectPreview" id = "projectPreview">
+                <h2>Preview</h2>
+                <img src = "#"  id = "projectPicture" alt = "A preview of the Project">
+                <p id = "projectDescription"></p>  
+            </section> 
+        </section>
+
+        <section class = "content" id = "certificates" >
+            <h2><u>Certificates</u></h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/HTML5Cert.PNG" alt="Coursera HTML5 Certificate">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/CSS3Cert.PNG" alt="Coursera CSS3 Certificate">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/JSCert.PNG" alt="Coursera Javascript Certificate">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="img/ASRDCert.PNG" alt="Coursera Advanced Styling with Responsive Design Certificate">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              
+        </section>
+
+    <footer>
+         Created Using HTML5,CSS3 and Javascript
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    </body>
+</html>

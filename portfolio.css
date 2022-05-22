@@ -1,0 +1,197 @@
+header{
+    padding:2%;
+}
+
+section>h1{
+    margin:0 auto;
+    text-align: center;
+    font-size:300%;
+    font-family:Andale Mono, monospace;
+    padding:1%;
+}
+
+header>section{
+    text-align: center;
+    font-family:Andale Mono, monospace;
+    padding:1%;
+}
+
+.lightbox {
+    position: relative;
+  }
+.lightbox:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    left: -2px;
+    z-index:-1;
+    border-left: 2px solid #000000;
+    border-top: 2px solid #000000;
+  }
+.lightbox:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  right: -2px;
+  bottom: -2px;
+  z-index:-1;
+  border-bottom: 2px solid #000000;
+  border-right: 2px solid #000000;
+}
+
+.darkbox {
+    position: relative;
+  }
+.darkbox:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    top: -2px;
+    left: -2px;
+    z-index:-1;
+    border-left: 2px solid #FFFFFF;
+    border-top: 2px solid #FFFFFF;
+  }
+.darkbox:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  right: -2px;
+  bottom: -2px;
+  z-index:-1;
+  border-bottom: 2px solid #FFFFFF;
+  border-right: 2px solid #FFFFFF;
+}
+
+
+
+nav{
+  padding:1%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav>a{
+    border: 2px solid #000000;
+    padding:1%;
+    text-decoration:none;
+    color:inherit;
+    font-family:Andale Mono, monospace;
+    width:16%;
+    text-align:center;
+    font-size: 2vw;
+}
+
+nav>a:hover{
+    background-color: #000000;
+    color:#FFFFFF;
+}
+
+h2,p{
+    font-family:Andale Mono, monospace;
+}
+
+.content{
+    display:none;
+}
+
+.about{
+    display:block;
+}
+
+.myPhoto{
+    display:none;
+}
+
+#certificates>div>a{
+    background-color: grey;
+}
+
+section{
+    padding:2%;
+}
+
+body{
+    display:flex;
+    min-height:100vh;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
+    text-align: center;
+    font-family:Andale Mono, monospace;
+}
+
+.mode{
+    background-color: #FFFFFF;
+}
+
+.projectLink{
+    display:inline-block;
+}
+
+.projectLink a{
+    font-size:150%;
+}
+
+.projectPreview{
+    display:none;
+    width: 80%;
+    vertical-align: top;
+    padding:1%;
+    margin-left:1%;
+    border: 2px solid #000000;
+    border-radius: 25px;
+}
+
+.projectPreview>h2{
+    text-align: center;
+}
+
+.projectPreview>img{
+    vertical-align:top;
+    width: 20%;
+}
+
+.projectPreview>p{
+    display:inline-block;
+    width: 76%;
+    margin-left:1%;
+}
+
+
+
+@media all and (min-width:900px){
+    
+    nav>a{
+        font-size:100%;
+    }
+    .myPhoto{
+        display:inline-block;
+        vertical-align: top;
+        margin:2%;
+    }
+    .aboutText{
+        display:inline-block;
+        width:70%;
+    }
+    section{
+        margin-bottom:1%;
+    }
+    .content{
+        display:block;
+    }
+    #certificates{
+        width:50%;
+    }
+    
+}
+
+
+
